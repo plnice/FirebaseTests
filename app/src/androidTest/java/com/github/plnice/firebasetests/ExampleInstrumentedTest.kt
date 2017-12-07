@@ -21,4 +21,9 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.github.plnice.firebasetests", appContext.packageName)
     }
+
+    @Test
+    fun useCodeFromMain() {
+        val testClass = TestClass()
+    }
 }
